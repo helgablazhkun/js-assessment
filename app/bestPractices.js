@@ -15,24 +15,22 @@ define(function() {
       return myObject;
     },
 
-    functions : function(flag) {
-	  
-	    if (flag) {
+    functions : function(flag) {		    
+      if (flag) {
           return 'a'; 
         } else {
-         return 'b'; 
-        
+         return 'b';         
 	  }
 
       return getValue(flag);
     },
     
     parseInt : function(num) {
-      return parseInt(num);
+      return parseInt(num,10);
     },
 
     identity : function(val1, val2) {
-
+      return val1===val2;
     }
   };
 });
